@@ -22,7 +22,7 @@ public class CordovaHttpPost extends CordovaHttp implements Runnable {
     String bytes;
     
     public CordovaHttpPost(String urlString , String bytes, Map<String, String> headers, CallbackContext callbackContext) {
-        super(urlString, params, headers, callbackContext);
+        super(urlString, null, headers, callbackContext);
         this.bytes = bytes;
     }
     
