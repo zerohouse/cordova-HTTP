@@ -19,9 +19,9 @@ import com.github.kevinsawicki.http.HttpRequest.HttpRequestException;
  
 public class CordovaHttpPost extends CordovaHttp implements Runnable {
     
-    Object bytes;
+    byte[] bytes;
     
-    public CordovaHttpPost(String urlString, Map<?, ?> params, Map<String, String> headers, CallbackContext callbackContext, Object bytes) {
+    public CordovaHttpPost(String urlString, Map<?, ?> params, Map<String, String> headers, CallbackContext callbackContext, byte[] bytes) {
         super(urlString, params, headers, callbackContext);
         this.bytes = bytes;
     }
